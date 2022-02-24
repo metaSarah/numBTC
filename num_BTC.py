@@ -6,7 +6,7 @@ def num_BTC(blockNum):
 
     while blockNum > 0:
         if blockNum >= 210000:
-            numBTC = numBTC + (210000 * 50)
+            numBTC = numBTC + (210000 * reward)
         else: 
             numBTC = blockNum * reward
         reward = reward/2
@@ -15,3 +15,5 @@ def num_BTC(blockNum):
     return float(numBTC)
 
 
+print(num_BTC(813574))
+# 19522337.5
