@@ -8,7 +8,7 @@ def num_BTC(blockNum):
         if blockNum >= 210000:
             numBTC = numBTC + (210000 * reward)
         else: 
-            numBTC = blockNum * reward
+            numBTC = numBTC + (blockNum * reward)
         reward = reward/2
         blockNum = blockNum - 210000
     
